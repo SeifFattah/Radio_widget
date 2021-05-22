@@ -1,0 +1,17 @@
+@import "variables";
+
+
+.widget {
+  width: 320px;
+  height: 504px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 21px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 53px 94px -40px rgba(0,0,0,1);
+  -moz-box-shadow: 0 53px 94px -40px rgba(0,0,0,1);
+  box-shadow: 0 27px 47px -20px rgba(0,0,0,1);
+}
+

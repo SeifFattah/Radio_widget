@@ -1,0 +1,92 @@
+@import "variables";
+
+
+.widget__body {
+  width: 100%;
+  height: 344px;
+  background: $color-body-bg;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  padding: 0 20px;
+  padding-top: 15px;
+  overflow: auto;       
+}
+
+.station-list {
+  list-style: none;
+}
+
+.list-item__control-panel {
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s all ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.--active {
+  height: 172px;  
+}
+
+.control-panel__minus-btn,
+.control-panel__plus-btn {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.control-panel__minus-btn {
+  background-image: url("../images/minus-sm.png");
+}
+
+.control-panel__plus-btn {
+  background-image: url("../images/plus-sm.png");
+}
+
+.control-panel__img {
+  display: block;
+  width: 144px;
+  height: 144px;
+  border-radius: 50%;
+  border: 2px solid $color-list-font;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.list-item__head {
+  height: 60px;
+  color: $color-list-font;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $font-family;
+  font-size: 21px;
+  border-bottom: 1px solid #43434e;
+  cursor: pointer;
+}
+
+.station-list__item {
+  &:last-child {
+    .list-item__head {
+      border-bottom: none;
+    }
+  }
+}
+
+.list-item__name {
+  cursor: pointer;
+}
+
+.list-item__freq {
+  font-weight: 600;
+}
